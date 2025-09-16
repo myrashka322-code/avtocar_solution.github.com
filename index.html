@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AvtoCar Solution - Автозапчастини</title>
+    <meta name="description" content="AvtoCar Solution – підбір та продаж автозапчастин для будь-яких марок авто. Самовивіз або відправка по Україні. Доставка по Лівому берегу від 2000 грн безкоштовно.">
+    <meta name="keywords" content="автозапчастини, VIN, підбір деталей, замовлення автозапчастин, доставка Україна, Лівий берег">
+    <meta name="author" content="AvtoCar Solution">
+    <style>
+        body {font-family: Arial, sans-serif; background: linear-gradient(135deg, #f4f4f4, #e9ecef); margin: 0; padding: 0; color: #333;}
+        header {background: #1a1a1a; color: #fff; text-align: center; padding: 40px 20px;}
+        header img {max-width: 120px; margin-bottom: 15px;}
+        header h1 {margin: 0; font-size: 2.5em; letter-spacing: 1px;}
+        header p {margin: 10px 0 0 0; font-size: 1.2em; color: #bbb;}
+        main {padding: 25px; max-width: 700px; margin: 30px auto; background-color: #fff; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);}
+        h2 {text-align: center; margin-bottom: 20px; font-size: 1.8em; color: #1a1a1a;}
+        p.intro {text-align: center; font-size: 1.1em; line-height: 1.5em; color: #555;}
+        form {display: flex; flex-direction: column; margin-top: 20px;}
+        input, textarea {margin-bottom: 15px; padding: 12px; font-size: 1em; border-radius: 8px; border: 1px solid #ccc; outline: none; transition: border 0.3s;}
+        input:focus, textarea:focus {border: 1px solid #1a1a1a;}
+        input[type="file"] {border: none;}
+        button {padding: 14px; font-size: 1.1em; border: none; border-radius: 8px; background-color: #1a1a1a; color: #fff; cursor: pointer; transition: 0.3s;}
+        button:hover {background-color: #333;}
+        footer {text-align: center; padding: 20px; font-size: 0.9em; color: #666;}
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="AvtoCar Solution Logo">
+    <h1>AvtoCar Solution</h1>
+    <p>Підбір та продаж автозапчастин для будь-яких марок авто. Самовивіз або відправка по Україні. Доставка по Лівому берегу від 2000 грн безкоштовно. Телефон: +38 093-396-30-80</p>
+    <p>Адреса: вул. Закревського 93, Київ</p>
+</header>
+
+<main>
+    <p class="intro">
+        Ласкаво просимо в AvtoCar Solution! Ми підберемо потрібні автозапчастини по VIN вашого авто, надамо фото та консультацію, а також забезпечимо доставку по Лівому берегу від 2000 грн безкоштовно. Залиште заявку – ми швидко зв’яжемося з вами!
+    </p>
+
+    <h2>Залишити заявку</h2>
+    <form action="sendmail.php" method="post" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Ваше ім'я" required>
+        <input type="tel" name="phone" placeholder="Телефон" required>
+        <input type="text" name="vin" placeholder="VIN автомобіля" required>
+        <textarea name="description" placeholder="Опишіть потрібну деталь" rows="4" required></textarea>
+        <input type="file" name="photo" accept="image/*">
+        <button type="submit">Відправити заявку</button>
+    </form>
+</main>
+
+<footer>
+    © 2025 AvtoCar Solution | Телефон: +38 093-396-30-80 | Доставка по Лівому берегу від 2000 грн безкоштовно | Адреса: вул. Закревського 93, Київ
+</footer>
+
+</body>
+</html>

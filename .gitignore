@@ -1,0 +1,15 @@
+# Системні файли
+.DS_Store
+Thumbs.db
+
+# Редакторські файли
+*.log
+*.tmp
+*.bak
+*.swp
+.idea/
+.vscode/
+
+# Загрузки
+uploads/
+.env
